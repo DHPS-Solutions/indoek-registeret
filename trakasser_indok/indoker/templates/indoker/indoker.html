@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+<div class="article-detail">
+    <div class="article">
+        <img src="{{ indoker.profile_pic.url }}">
+        <h2>{{ indoker.fullname }}</h2>
+        <h3><a href="{{ messengerlink }}">Send vedrørende en trakasserende melding</a></h3>
+    </div>
+</div>
+
+{% endblock %}

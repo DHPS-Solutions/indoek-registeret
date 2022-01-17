@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+
+{% block content%}
+    <h1>Liste av registrerte indøkere</h1>
+    <div class="articles">
+    {% for indoker in indokere %}
+        <div class="article">
+            <img src="{{ indoker.profile_pic.url }}">
+            <h2><a href="{% url 'indoker:detail' slug=indoker.slug %}">{{ indoker.fullname }}</a></h2>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

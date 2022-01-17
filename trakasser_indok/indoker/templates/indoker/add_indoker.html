@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+<div class="create-article">
+    <h2>Legg en ny indøker til i registeret</h2>
+    <form class="site-form" action="{% url 'indoker:create' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Legg til">
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,165 @@
+body{
+    background-color: #fff;
+    background-repeat-y: no-repeat;
+    color: black;
+}
+
+body *{
+    font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.wrapper > h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+nav{
+    justify-self: end;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav button{
+    background: none;
+    color: black;
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.article{
+    padding: 10px;
+    border: 1px solid #00509e;
+    position: relative;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.article h2{
+    font-size: 1.2em;
+}
+
+.article .author{
+    padding: 10px;
+    background: #00509e;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #0f121f;
+}
+
+.article-detail .article{
+    padding: 0;
+}
+
+.article-detail  .article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.articles img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.article-detail  .article h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em
+}
+
+.article-detail .article h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.article-detail  .article p{
+    margin: 10px 20px
+}
+
+.site-form {
+    margin-top: 60px;
+    border: 1px solid #00509e;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea {
+    display: block;
+    padding: 10px;
+}
+
+a.highlight {
+    border: 1px solid #00509e;
+    padding: 10px;
+    border-radius: 4px;
+    color: #00509e;
+}
+
+.helptext, .helptext ul {
+    margin: 0 auto 20px;
+    color: black;
+    font-size: 0.9em;
+    display: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.errorlist {
+    padding: 0;
+}
+
+.site-form input[type="submit"]{
+    background-color: #00509e;
+    border: 0;
+    color: black;
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
